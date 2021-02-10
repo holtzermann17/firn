@@ -713,7 +713,7 @@ following:&lt;/span&gt;&lt;/p&gt;&lt;pre class="language-org"&gt;&lt;code class=
 
 (Text written here will be overwritten when the page is rendered.)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;span&gt;The following layout formats an individual blog entry that will be
-added to the list described above.&lt;/span&gt;&lt;/p&gt;&lt;pre class="language-clojure"&gt;&lt;code class="language-clojure"&gt;(defn update
+added to the list described above.&lt;/span&gt;&lt;/p&gt;&lt;pre class="language-clojure"&gt;&lt;code class="language-clojure"&gt;(defn blog-update
   [{:keys [render partials title meta date-created build-url]}]
   (let [{:keys [head]} partials]
     [:html

@@ -27,7 +27,7 @@ following:</span></p><pre class="language-org"><code class="language-org">#+titl
 
 (Text written here will be overwritten when the page is rendered.)
 </code></pre><p><span>The following layout formats an individual blog entry that will be
-added to the list described above.</span></p><pre class="language-clojure"><code class="language-clojure">(defn update
+added to the list described above.</span></p><pre class="language-clojure"><code class="language-clojure">(defn blog-update
   [{:keys [render partials title meta date-created build-url]}]
   (let [{:keys [head]} partials]
     [:html
